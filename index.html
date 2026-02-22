@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Solfood Projects</title>
+    <meta
+      name="description"
+      content="Projects hosted on GitHub Pages under isasong.org."
+    />
+    <style>
+      :root {
+        --bg: #f8fafc;
+        --card: #ffffff;
+        --text: #0f172a;
+        --muted: #475569;
+        --border: #e2e8f0;
+        --accent: #166534;
+        --accent-2: #15803d;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        background: radial-gradient(1200px 600px at 0% 0%, #ecfdf5 0%, var(--bg) 45%);
+        color: var(--text);
+      }
+
+      .wrap {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 40px 20px 56px;
+      }
+
+      .hero {
+        margin-bottom: 28px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(28px, 5vw, 42px);
+        line-height: 1.05;
+      }
+
+      .sub {
+        margin: 0;
+        color: var(--muted);
+        font-size: 16px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 14px;
+      }
+
+      .card {
+        display: block;
+        text-decoration: none;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 16px;
+        transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-2px);
+        border-color: #bbf7d0;
+        box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+      }
+
+      .name {
+        margin: 0 0 6px;
+        font-size: 17px;
+        font-weight: 700;
+      }
+
+      .desc {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.4;
+      }
+
+      .path {
+        margin-top: 10px;
+        display: inline-block;
+        font-size: 12px;
+        color: var(--accent);
+        background: #f0fdf4;
+        border: 1px solid #dcfce7;
+        padding: 3px 8px;
+        border-radius: 999px;
+      }
+
+      .footer {
+        margin-top: 30px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .footer a {
+        color: var(--accent-2);
+        text-decoration: none;
+      }
+      .footer a:hover { text-decoration: underline; }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="hero">
+        <h1>Solfood Projects</h1>
+        <p class="sub">Apps hosted at <strong>isasong.org/&lt;repo-name&gt;</strong>.</p>
+      </section>
+
+      <section class="grid">
+        <a class="card" href="/Willowbrook/">
+          <h2 class="name">Willowbrook</h2>
+          <p class="desc">Garden planning app.</p>
+          <span class="path">/Willowbrook/</span>
+        </a>
+
+        <a class="card" href="/bluray/">
+          <h2 class="name">Bluray Catalog</h2>
+          <p class="desc">Bluray Catalog app with barcode scanning.</p>
+          <span class="path">/repo-name/</span>
+        </a>
+
+        <a class="card" href="/recipe-wiki/">
+          <h2 class="name">Recipe Wiki</h2>
+          <p class="desc">Personal Favorite Recipe Wiki.</p>
+          <span class="path">/repo-name/</span>
+        </a>
+
+        <!-- Copy this card block for more repos -->
+        <!--
+        <a class="card" href="/repo-name/">
+          <h2 class="name">Repo Name</h2>
+          <p class="desc">Short description.</p>
+          <span class="path">/repo-name/</span>
+        </a>
+        -->
+      </section>
+
+      <p class="footer">
+        GitHub profile:
+        <a href="https://github.com/Solfood" target="_blank" rel="noreferrer">github.com/Solfood</a>
+      </p>
+    </main>
+  </body>
+</html>
